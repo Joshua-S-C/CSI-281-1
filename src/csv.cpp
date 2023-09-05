@@ -119,8 +119,7 @@ namespace csi281 {
             getline(fin, strIn);
         }
 
-        // Add information for each year to data array
-        //CityYear data[51];
+        // Do the thing
         CityYear* data = new CityYear[endLine - startLine]();
         
         for (int i = 0; i < (endLine - startLine); i++) {

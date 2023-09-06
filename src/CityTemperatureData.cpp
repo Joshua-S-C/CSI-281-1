@@ -44,15 +44,14 @@ namespace csi281 {
     // Find the right CityYear in the array and return it
     const CityYear CityTemperatureData::operator[](const int year) const {
         // mfw I had the index one too short for an hour ._.
-        int i;
-        for (i = 0; i < _count; i++) {
+        for (int i = 0; i < _count; i++) {
             if ((int)_data[i].year == year) {
                 return _data[i];
             }
         }
-
         CityYear temp1 = { -1,-1,-1,.1f,.1f,.1f };
         return temp1;
+
         // TEMP
 /*    
         CityYear temp = {1970,1,3,72.3f,87.1f,54.4f};
@@ -92,47 +91,42 @@ namespace csi281 {
 
     }
     
+    /*DONE*/
     // Get the average (mean) temperature of all time for this city
     // by averaging every CityYear.
     float CityTemperatureData::getAllTimeAverage() const {
-        return 0;
+        //return 0;
 
-        // YOUR CODE HERE
-
-        /*float total = 0;
+        float total = 0;
         for (int i = 0; i < _count; i++) {
             total += _data[i].averageTemperature;
         }
-        return total / _count;*/
+        return total / _count;
     }
     
     // Sum all of the days below 32 for all years.
     int CityTemperatureData::getTotalDaysBelow32() const {
-        return 0;
+        //return 0;
 
-        // YOUR CODE HERE
-
-        /*int years = 0;
+        int years = 0;
         for (int i = 0; i < _count; i++) {
             if (_data[i].averageTemperature < 32) {
                 years++;
             }
         }
-        return years;*/
+        return years;
     }
     
     // Sum all of the days above 90 for all years.
     int CityTemperatureData::getTotalDaysAbove90() const {
-        return 0;
+        //return 0;
 
-        // YOUR CODE HERE
-
-        /*int years = 0;
+        int years = 0;
         for (int i = 0; i < _count; i++) {
             if (_data[i].averageTemperature > 90) {
                 years++;
             }
         }
-        return years;*/
+        return years;
     }
 }

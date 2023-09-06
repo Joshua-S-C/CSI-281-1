@@ -49,9 +49,9 @@ TEST_CASE( "New York Test Data", "[New York]" ) {
 
     // WORKING
     SECTION( "Correct Averages & Totals" ) {
-//        CHECK( nyc.getAllTimeAverage() == Approx(55.25294118f).epsilon(0.01));
-//        CHECK( nyc.getTotalDaysBelow32() == 967);
-//        CHECK( nyc.getTotalDaysAbove90() == 891);
+        CHECK( nyc.getAllTimeAverage() == Approx(55.25294118f).epsilon(0.01));
+        CHECK( nyc.getTotalDaysBelow32() == 967);
+        CHECK( nyc.getTotalDaysAbove90() == 891);
     }
 }
 
@@ -72,9 +72,9 @@ TEST_CASE( "Burlington Test Data", "[Burlington]" ) {
     }
     
     SECTION( "Correct Averages & Totals" ) {
-        //CHECK( burlington.getAllTimeAverage() == Approx(45.70589f).epsilon(0.01));
-        //CHECK( burlington.getTotalDaysBelow32() == 3242);
-        //CHECK( burlington.getTotalDaysAbove90() == 357);
+        CHECK( burlington.getAllTimeAverage() == Approx(45.70589f).epsilon(0.01));
+        CHECK( burlington.getTotalDaysBelow32() == 3242);
+        CHECK( burlington.getTotalDaysAbove90() == 357);
     }
 
 

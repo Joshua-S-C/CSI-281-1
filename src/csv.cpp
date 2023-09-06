@@ -120,9 +120,9 @@ namespace csi281 {
         }
 
         // Do the thing
-        CityYear* data = new CityYear[endLine - startLine]();
+        CityYear* data = new CityYear[endLine - startLine + 1]();
         
-        for (int i = 0; i < (endLine - startLine); i++) {
+        for (int i = 0; i < (endLine - startLine + 1); i++) {
             data[i] = readLine(fin);   
         }
 

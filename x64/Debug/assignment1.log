@@ -1,3 +1,1 @@
-﻿  CityTemperatureData.cpp
-E:\_Cooledge\Semester 3\CSI 281\CSI-281-1\src\CityTemperatureData.cpp(85): warning C4715: 'csi281::CityTemperatureData::operator[]': not all control paths return a value
-  assignment1.vcxproj -> E:\_Cooledge\Semester 3\CSI 281\CSI-281-1\x64\Debug\assignment1.exe
+﻿  assignment1.vcxproj -> E:\_Cooledge\Semester 3\CSI 281\CSI-281-1\x64\Debug\assignment1.exe

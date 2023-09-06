@@ -39,24 +39,32 @@ namespace csi281 {
     CityTemperatureData::~CityTemperatureData() {
     }
     
+    /*DONE*/
     // Look up a CityYear instance held by CityTemperatureData by its year.
     // Find the right CityYear in the array and return it
     const CityYear CityTemperatureData::operator[](const int year) const {
-
-        // TEMP
-        CityYear temp = { 2022,1,3,72.3f,87.1f,54.4f };
-        if (temp.year == 29) // the comparison is the problem, are they both not ints. one is a pointer somehow, or bothj idont fucking know
-            return temp;
-
-        
-        // Its not working becuz year is an int. no
+        // mfw I had the index one too short for an hour ._.
         int i;
-        for (i = 0; i < count(); i++) {
-            if (_data[i].year == year) {
+        for (i = 0; i < _count; i++) {
+            if ((int)_data[i].year == year) {
                 return _data[i];
             }
         }
-        
+
+        CityYear temp1 = { -1,-1,-1,.1f,.1f,.1f };
+        return temp1;
+        // TEMP
+/*    
+        CityYear temp = {1970,1,3,72.3f,87.1f,54.4f};
+        //temp.year = year;
+        if (temp.year == year) // the comparison is the problem, are they both not ints. one is a pointer somehow, or bothj idont fucking know
+            return temp;
+
+        CityYear temp1 = { -1,-1,-1,.1f,.1f,.1f };
+        return temp1;
+*/
+
+        // TEMP 2.0
 /*
         //CityYear datas[5];
         CityYear temp1 = { 2022,12,3,72.3f,87.1f,54.4f };

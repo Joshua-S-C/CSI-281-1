@@ -51,52 +51,12 @@ namespace csi281 {
         }
         CityYear temp1 = { -1,-1,-1,.1f,.1f,.1f };
         return temp1;
-
-        // TEMP
-/*    
-        CityYear temp = {1970,1,3,72.3f,87.1f,54.4f};
-        //temp.year = year;
-        if (temp.year == year) // the comparison is the problem, are they both not ints. one is a pointer somehow, or bothj idont fucking know
-            return temp;
-
-        CityYear temp1 = { -1,-1,-1,.1f,.1f,.1f };
-        return temp1;
-*/
-
-        // TEMP 2.0
-/*
-        //CityYear datas[5];
-        CityYear temp1 = { 2022,12,3,72.3f,87.1f,54.4f };
-        CityYear temp2 = { 1970,2,3,72.3f,87.1f,54.4f };
-        CityYear temp3 = { 2022,12,3,72.3f,87.1f,54.4f };
-        CityYear temp4 = { 2022,12,3,72.3f,87.1f,54.4f };
-        CityYear temp5 = { 1970,1,3,72.3f,87.1f,54.4f };
-        CityYear* datas = new CityYear[5]();
-        //CityYear* datas = new CityYear[5]{ temp1,temp2,temp3,temp4,temp5 };
-        datas[0] = temp1;
-        datas[1] = temp2;
-        datas[2] = temp3;
-        datas[3] = temp4;
-        datas[4] = temp5;
-
-        // Maybe something to do with dealing with equals between pointers and ints
-        // Yea data has to be a dynamic array, change the other function (ini csv) form earlier
-        for (int i = 0; i < 4; i++) {
-            if (datas[i].year == year) {
-                return datas[i];
-            }
-        }
-
-*/
-
     }
     
     /*DONE*/
     // Get the average (mean) temperature of all time for this city
     // by averaging every CityYear.
     float CityTemperatureData::getAllTimeAverage() const {
-        //return 0;
-
         float total = 0;
         for (int i = 0; i < _count; i++) {
             total += _data[i].averageTemperature;
@@ -106,8 +66,6 @@ namespace csi281 {
     
     // Sum all of the days below 32 for all years.
     int CityTemperatureData::getTotalDaysBelow32() const {
-        //return 0;
-
         int answer = 0;
         for (int i = 0; i < _count; i++) {
             answer += _data[i].numDaysBelow32;
@@ -117,8 +75,6 @@ namespace csi281 {
     
     // Sum all of the days above 90 for all years.
     int CityTemperatureData::getTotalDaysAbove90() const {
-        //return 0;
-
         int answer = 0;
         for (int i = 0; i < _count; i++) {
             answer += _data[i].numDaysAbove90;

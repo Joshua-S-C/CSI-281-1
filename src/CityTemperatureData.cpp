@@ -108,25 +108,21 @@ namespace csi281 {
     int CityTemperatureData::getTotalDaysBelow32() const {
         //return 0;
 
-        int years = 0;
+        int answer = 0;
         for (int i = 0; i < _count; i++) {
-            if (_data[i].averageTemperature < 32) {
-                years++;
+            answer += _data[i].numDaysBelow32;
             }
-        }
-        return years;
+        return answer;
     }
     
     // Sum all of the days above 90 for all years.
     int CityTemperatureData::getTotalDaysAbove90() const {
         //return 0;
 
-        int years = 0;
+        int answer = 0;
         for (int i = 0; i < _count; i++) {
-            if (_data[i].averageTemperature > 90) {
-                years++;
-            }
+            answer += _data[i].numDaysAbove90;
         }
-        return years;
+        return answer;
     }
 }

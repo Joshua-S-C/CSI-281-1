@@ -85,7 +85,7 @@ namespace csi281 {
         strIn = readStringCell(iss);
         strIn = readStringCell(iss);
 
-        // Do the thing
+        // Do the thing!
         CityYear data;
         data.year = readIntCell(iss);
         data.numDaysBelow32 = readIntCell(iss);
@@ -119,7 +119,7 @@ namespace csi281 {
             getline(fin, strIn);
         }
 
-        // Do the thing
+        // Do the thing!
         CityYear* data = new CityYear[endLine - startLine + 1]();
         
         for (int i = 0; i < (endLine - startLine + 1); i++) {

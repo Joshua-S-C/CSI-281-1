@@ -1,4 +1,6 @@
-//
+//  Joshua Sinclair Chong
+//  Modified operator overload, getAllTimeAverage, getTotalBelow32, getTotalAbove90
+// 
 //  CityTemperatureData.cpp
 //
 //  Implementation of CityTemperatureData
